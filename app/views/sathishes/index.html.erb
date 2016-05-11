@@ -1,0 +1,33 @@
+<h1>Listing sathishes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Semester</th>
+      <th>Marks</th>
+      <th>Address</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sathishes.each do |sathish| %>
+      <tr>
+        <td><%= sathish.name %></td>
+        <td><%= sathish.semester %></td>
+        <td><%= sathish.marks %></td>
+        <td><%= sathish.address %></td>
+        <td><%= link_to 'Show', sathish %></td>
+        <td><%= link_to 'Edit', edit_sathish_path(sathish) %></td>
+        <td><%= link_to 'Destroy', sathish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sathish', new_sathish_path %>

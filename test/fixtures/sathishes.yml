@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  semester: 1
+  marks: 1
+  address: MyText
+
+two:
+  name: MyText
+  semester: 1
+  marks: 1
+  address: MyText
